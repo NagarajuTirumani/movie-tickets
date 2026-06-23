@@ -1,4 +1,4 @@
-FROM ngnix:alpine:3.23
+FROM ngnix
 
 EXPOSE 80
 
