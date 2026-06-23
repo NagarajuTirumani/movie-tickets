@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.screen {
+    background: #444;
+    color: white;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.seats {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.seat {
+    height: 40px;
+    width: 40px;
+    background: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.seat.selected {
+    background: #4CAF50;
+    color: white;
+}
+
+.seat.booked {
+    background: #ff5252;
+    cursor: not-allowed;
+    color: white;
+}
+
+.summary {
+    margin: 20px 0;
+    text-align: left;
+}
+
+button {
+    padding: 10px 20px;
+    background: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #1976D2;
+}
